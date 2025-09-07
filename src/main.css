@@ -1,0 +1,82 @@
+:root {
+  --transition: 0.15s ease;
+  --dynamic-fast-transition: 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body.light-mode {
+  --surface-primary: #f6f6fb;
+  --text-primary: #1d1d1d;
+  --text-secondary: #464646;
+  --text-alternative: #000000b2;
+  --color-primary: #5611bf;
+  --color-primary-light: #dad2ff;
+  --color-primary-dark: #4a11a1;
+  --thumb: #c2c2c2;
+  --hover-thumb: #8e8e8e;
+}
+
+body.dark-mode {
+  --surface-primary: #0a0b15;
+  --text-primary: #fff;
+  --text-secondary: #9c9caf;
+  --text-alternative: #d5d2d2a4;
+  --color-primary: #864cff;
+  --color-primary-light: #1d1f34;
+  --color-primary-dark: #4a11a1;
+  --thumb: #1f213d;
+  --hover-thumb: #2f3263;
+}
+
+body {
+  background: var(--surface-primary);
+  color: var(--text-secondary);
+  transition: background var(--dynamic-fast-transition);
+}
+
+/* RESET STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+button:active {
+  transform: scale(0.9);
+  transition: transform var(--dynamic-fast-transition);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  /* Desactivar efecto de resaltado en mobile */
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--thumb);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-thumb);
+}
