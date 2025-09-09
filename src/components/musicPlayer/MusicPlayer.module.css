@@ -1,0 +1,24 @@
+.player {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: var(--background-color);
+  border: 6px solid var(--foreground-color);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+@media (width <= 700px) {
+  .player {
+    width: 100%;
+    height: auto;
+  }
+
+  .player-bar {
+    width: 350px;
+    margin: auto;
+  }
+}
