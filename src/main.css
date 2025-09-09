@@ -1,17 +1,21 @@
 :root {
   --transition: 0.15s ease;
   --dynamic-fast-transition: 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  --root-font-size: 16px;
+  font-size: var(--root-font-size);
 }
 
 html {
   scroll-behavior: auto;
+  overflow: hidden;
 }
 
 body.light-mode {
   --surface-primary: #f6f6fb;
+  --background-color: #121212;
+  --foreground-color: #191a1c;
   --text-primary: #1d1d1d;
   --text-secondary: #464646;
-  --text-alternative: #000000b2;
   --color-primary: #5611bf;
   --color-primary-light: #dad2ff;
   --color-primary-dark: #4a11a1;
@@ -20,11 +24,12 @@ body.light-mode {
 }
 
 body.dark-mode {
-  --surface-primary: #0a0b15;
+  --surface-primary: #0f0f0f;
+  --background-color: #121212;
+  --foreground-color: #191a1c;
   --text-primary: #fff;
-  --text-secondary: #9c9caf;
-  --text-alternative: #d5d2d2a4;
-  --color-primary: #864cff;
+  --text-secondary: #dfdfe2;
+  --color-primary: #fde047;
   --color-primary-light: #1d1f34;
   --color-primary-dark: #4a11a1;
   --thumb: #1f213d;
@@ -33,7 +38,7 @@ body.dark-mode {
 
 body {
   background: var(--surface-primary);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   transition: background var(--dynamic-fast-transition);
 }
 
@@ -46,12 +51,21 @@ body {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
+h1 {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: var(--root-font-size);
+}
+
+ul {
   margin: 0;
+}
+
+button {
+  all: unset;
 }
 
 button:active {
