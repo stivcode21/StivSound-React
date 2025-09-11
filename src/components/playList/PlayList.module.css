@@ -13,7 +13,6 @@
   overflow-y: scroll;
   overflow-x: hidden;
   flex-direction: column;
-  row-gap: 8px;
   padding: 8px 9px;
   justify-content: start;
   list-style: none;
@@ -23,10 +22,31 @@
   border-bottom: 1px solid var(--background-color);
   height: 60px;
   display: grid;
-  grid-template-columns: 7fr 7fr 1fr;
+  grid-template-columns: 10fr 10fr 1fr;
   width: 100%;
   align-items: center;
-  padding: 5px;
+  padding: 6px 0 6px 6px;
+  cursor: pointer;
+}
+
+.songSelected {
+  background: var(--selected);
+  color: var(--color-primary);
+}
+
+.spinner {
+  color: var(--color-primary);
+  margin-left: 10px;
+}
+
+.iconList {
+  color: var(--text-primary);
+  width: fit-content;
+  cursor: pointer;
+}
+
+.iconList:hover {
+  color: var(--color-primary-dark);
 }
 
 .playListSongs::-webkit-scrollbar {
@@ -34,7 +54,7 @@
 }
 
 .playListSongs::-webkit-scrollbar-track {
-  background: var(--background-color);
+  background: #0d394685;
 }
 
 .playListSongs::-webkit-scrollbar-thumb {
