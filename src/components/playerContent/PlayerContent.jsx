@@ -10,6 +10,7 @@ const PlayerContent = () => {
   const [time, setTime] = useState("00:00 / 00:00");
   const { currentSong, setCurrentSong, allSongs, setAllSongs } =
     useUserDataStore();
+
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
@@ -60,7 +61,7 @@ const PlayerContent = () => {
   };
 
   return (
-    <div
+    <section
       className={styles.playerContent}
       style={{
         backgroundImage: `url(${
@@ -90,6 +91,7 @@ const PlayerContent = () => {
           {isPlaying ? (
             <button
               aria-label="Pause"
+              className={styles.pause}
               onClick={() => {
                 audio.pause();
               }}
@@ -113,13 +115,17 @@ const PlayerContent = () => {
           <button aria-label="Next" onClick={nextSong}>
             <SkipForward />
           </button>
-          <button aria-label="Shuffle" onClick={shuffle}>
+          <button
+            aria-label="Shuffle"
+            className={styles.shuffle}
+            onClick={shuffle}
+          >
             <Shuffle />
           </button>
           <div id="time-display">{time}</div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
