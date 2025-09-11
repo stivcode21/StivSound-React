@@ -73,10 +73,6 @@
   text-align: center;
 }
 
-#player-song-title {
-  font-size: 1.125rem;
-}
-
 .playerButtons {
   display: flex;
   justify-content: space-around;
@@ -85,27 +81,21 @@
 
 .playerButtons svg {
   stroke: var(--text-primary);
+  cursor: pointer;
   width: 34px;
   height: 34px;
 }
 
-/* Botones individuales */
-.previous,
-.play,
-.pause,
-.next,
-.shuffle {
-  background: transparent;
-  border: none;
-  color: var(--color-primary);
-  cursor: pointer;
-  font-size: var(--root-font-size);
-  outline-color: var(--color-primary);
-  text-align: center;
-  display: flex;
-  align-items: center;
+.pause svg {
+  stroke: var(--color-primary);
 }
 
+.shuffle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Botones individuales */
 #time-display {
   font-size: 0.85rem;
 }
