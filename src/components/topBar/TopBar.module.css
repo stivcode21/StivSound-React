@@ -11,7 +11,7 @@
 .parallelLines {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 6px;
+  row-gap: 8px;
   padding: 0 5px;
 }
 
@@ -19,7 +19,16 @@
   height: 2px;
   width: 100%;
   min-width: 75px;
+}
+
+.bar1 {
   background-color: var(--color-primary);
+  box-shadow: 0px 1px 3px var(--color-primary);
+}
+
+.bar2 {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0px 1px 3px var(--color-primary-dark);
 }
 
 .title {
