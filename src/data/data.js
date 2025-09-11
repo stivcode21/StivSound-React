@@ -6,7 +6,7 @@ import posterMojandoAsientos from "../assets/posters/poster-mojandoAsientos.webp
 import posterSoltera from "../assets/posters/poster-soltera.webp";
 import posterPolosOpuestos from "../assets/posters/poster-polosOpuestos.webp";
 import posterLuna from "../assets/posters/poster-luna.webp";
-import posterUwaie from "../assets/posters/poster-uwaie.webp";
+import posterUwaie from "../assets/posters/poster-uwaiee.webp";
 import posterNormal from "../assets/posters/poster-normal.webp";
 
 import bannerMirame from "../assets/banners/banner-mirame.webp";
@@ -89,7 +89,7 @@ export const allSongs = [
     id: 8,
     title: "UWAIE",
     artist: "Kapo",
-    poster: posterUwaie,
+    img: posterUwaie,
     banner: bannerUwaie,
     src: "https://firebasestorage.googleapis.com/v0/b/base-batos-shop.appspot.com/o/UWAIE%20-%20Kapo%20(Video%20Oficial).mp3?alt=media&token=81eb4ea4-62e6-4ef7-a52a-71655c40d8a4",
   },
