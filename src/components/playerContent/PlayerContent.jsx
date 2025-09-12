@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./PlayerContent.module.css";
-import imgPreviu from "@/assets/logo-stivsound.jpg";
+import imgPreviu from "/logo-stivsound.jpg";
 import { Pause, PlayIcon, Shuffle, SkipBack, SkipForward } from "lucide-react";
 import { updateTime } from "@/utils/time";
 import { useUserDataStore } from "../../store/userDataStore";
